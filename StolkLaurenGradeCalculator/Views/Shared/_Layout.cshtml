@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+
+    <!--these two lines make the website icon on the tab in the browser-->
+    <link rel="shortcut icon" href="~/img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="~/img/favicon.ico" type="image/ico" />
+
+    <title>@ViewData["Title"]</title>
+
+    <!--<link href="css/default.css" rel="stylesheet" />-->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
+
+    <nav>
+        <a asp-controller="Blah" asp-action="Index">Home</a>
+        <a asp-controller="Blah" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    
+
+</body>
+
+</html>
